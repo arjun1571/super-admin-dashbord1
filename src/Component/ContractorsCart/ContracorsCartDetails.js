@@ -78,12 +78,12 @@ const ContracorsCartDetails = () => {
       <hr className="mt-6 " />
       <div className=" lg:mx-28 md:mx-12 mt-7">
         <h1 className="text-2xl font-bold">Trades</h1>
-        <div className="mt-4 flex ">
-            <div className="bg-[#E5EBE4] p-2 w-32 flex rounded-full items-center justify-between mr-4">
+        <div className="mt-4 flex mb-10">
+            <div className="bg-[#E5EBE4] p-2 w-32 flex rounded-full items-center justify-between lg:mr-4 mr-2">
                 <button className="">Building </button>
                 <img className=" h-4" src={corss} alt="" />
             </div>
-            <div className="bg-[#E5EBE4] p-2 w-32 flex rounded-full items-center justify-between mr-4">
+            <div className="bg-[#E5EBE4] p-2 w-32 flex rounded-full items-center justify-between lg:mr-4 mr-2">
                 <button className="">Arcitecture </button>
                 <img className=" h-4" src={corss} alt="" />
             </div>
@@ -93,6 +93,7 @@ const ContracorsCartDetails = () => {
             </div>
         </div>
       </div>
+      <hr className="mt-6 " />
     </div>
   );
 };
