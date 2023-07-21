@@ -104,7 +104,7 @@ const Trades = () => {
       ];
     return (
         <div className="p-5 lg:p-14 mt-10 bg-[#FFF] rounded-2xl">
-            <div className="flex flex-wrap sm:mt-3 lg:mt-0 mx-auto w-full">
+            <div className="flex flex-wrap sm:mt-3 lg:mt-20  mx-auto w-full">
                   {jobCategories.map((category, index) => (
                     <TreadDetails key={index} category={category}></TreadDetails>
                   ))}
