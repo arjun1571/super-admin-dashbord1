@@ -1,7 +1,7 @@
 import React from 'react';
 import Contractors from '../Contractors/Contractors';
+import MoneyDashBord from '../MoneyDashbord/MoneyDashBord';
 
-// import MoneyDashboard from "./components/MoneyDashboard/MoneyDashboard";
 
 
 const DashBord = () => {
@@ -16,8 +16,7 @@ const DashBord = () => {
           </div>
         </div>
         <div>
-          {/* <MoneyDashboard></MoneyDashboard> */}
-          <h1>money dash</h1>
+          <MoneyDashBord></MoneyDashBord>
         </div>
       </div>
     );

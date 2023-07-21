@@ -1,7 +1,8 @@
 import React from 'react';
 import menuHome from "../asset/home-menu.svg";
+import Enginer from "../asset/engineer.png";
 import { SearchIcon } from "@heroicons/react/outline";
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 
 const Main = () => {
@@ -9,6 +10,7 @@ const Main = () => {
         <div className="lg:flex py-16 bg-[#F3F7F2]">
       {/* menu div */}
       <div className="w-[100%] lg:w-[20%] flex lg:block items-center justify-around py-3 ">
+        <Link to={"/dashbord"}>
         <div className="flex flex-col items-center">
           <img
             className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
@@ -17,14 +19,17 @@ const Main = () => {
           />
           <p className="text-xs font-semibold mt-1">Dashboard</p>
         </div>
+        </Link>
+        <Link to={"/contractors"}>
         <div className="flex flex-col items-center  lg:my-16">
           <img
             className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
-            src={menuHome}
+            src={Enginer}
             alt="contractors"
           />
           <p className="text-xs font-semibold mt-1">Contractors</p>
         </div>
+        </Link>
         <div className="flex flex-col items-center">
           <img
             className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
