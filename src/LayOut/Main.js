@@ -30,7 +30,7 @@ const Main = () => {
           <p className="text-xs font-semibold mt-1">Contractors</p>
         </div>
         </Link>
-        <Link to={"/contractorCart-details"}>
+        <Link >
         <div className="flex flex-col items-center">
           <img
             className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
