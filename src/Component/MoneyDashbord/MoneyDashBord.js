@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import money from "../../asset/money.png";
 import arrow1 from "../../asset/arrow1.png";
 // import arrow2 from "../../asset/arrow2.png";
@@ -8,55 +8,63 @@ import error from "../../asset/error.png";
 import export1 from "../../asset/export.png";
 import goal from "../../asset/goal.png";
 // import home from "../../asset/home.png";
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import {
+  CartesianGrid,
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const MoneyDashBord = () => {
-    const data = [
-        {
-          name: "Feb 1",
-          uv: 140,
-          pv: 2400,
-          amt: 2400,
-        },
-        {
-          name: "Feb 2",
-          uv: 100,
-          pv: 1398,
-          amt: 2210,
-        },
-        {
-          name: "Feb 3",
-          uv: 80,
-          pv: 9800,
-          amt: 2290,
-        },
-        {
-          name: "Feb 4",
-          uv: 60,
-          pv: 3908,
-          amt: 2000,
-        },
-        {
-          name: "Feb 5",
-          uv: 40,
-          pv: 4800,
-          amt: 2181,
-        },
-        {
-          name: "Feb 6",
-          uv: 0,
-          pv: 3800,
-          amt: 2500,
-        },
-        {
-          name: "Feb 7",
-          uv: 0,
-          pv: 4300,
-          amt: 2100,
-        },
-      ];
-    return (
-        <div className="">
+  const data = [
+    {
+      name: "Feb 1",
+      uv: 140,
+      pv: 2400,
+      amt: 2400,
+    },
+    {
+      name: "Feb 2",
+      uv: 100,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "Feb 3",
+      uv: 80,
+      pv: 9800,
+      amt: 2290,
+    },
+    {
+      name: "Feb 4",
+      uv: 60,
+      pv: 3908,
+      amt: 2000,
+    },
+    {
+      name: "Feb 5",
+      uv: 40,
+      pv: 4800,
+      amt: 2181,
+    },
+    {
+      name: "Feb 6",
+      uv: 0,
+      pv: 3800,
+      amt: 2500,
+    },
+    {
+      name: "Feb 7",
+      uv: 0,
+      pv: 4300,
+      amt: 2100,
+    },
+  ];
+  return (
+    <div className="">
       <div className=" border-2 mt-12 lg:flex gap-10 border-[#F3F7F2] rounded-xl p-5 lg:w-[100%]">
         <div className="w-[100%] md:w-[100%] lg:w-[30%] mb-10 md:mb-10 lg:mb-0">
           <p className="text-xs font-bold">Processing</p>
@@ -70,7 +78,9 @@ const MoneyDashBord = () => {
                   src={money}
                   alt=""
                 />
-                <p className="mx-2 text-xs">See details about money thats on the way</p>
+                <p className="mx-2 text-xs">
+                  See details about money thats on the way
+                </p>
               </div>
               <img
                 className="p-1 bg-[#EAEAEA] rounded-full"
@@ -130,7 +140,9 @@ const MoneyDashBord = () => {
             </div>
             <hr className="mb-3" />
             <div className="flex items-center justify-between">
-              <p className="mx-1 text-xs font-bold text-[#928CF9]">See details</p>
+              <p className="mx-1 text-xs font-bold text-[#928CF9]">
+                See details
+              </p>
               <img src={arrow3} alt="" />
             </div>
           </div>
@@ -159,34 +171,34 @@ const MoneyDashBord = () => {
         </div>
         {/* graph */}
         <div className="w-[100%] md:w-[100%] lg:w-[70%]">
-            <div className="flex mb-5 items-center justify-between">
-                <div>
-                    <p className="text-xs font-bold">Total earnings</p>
-                    <h3 className="text-xl font-bold">$329.03 USD</h3>
-                </div>
-                <div className="flex items-center bg-[#EAEAEA] rounded-xl p-1 mr-4">
-                  <p className="me-2 text-xs font-bold">Past Year</p>
-                  <img src={arrow1} alt="export" />
-                </div>
+          <div className="flex mb-5 items-center justify-between">
+            <div>
+              <p className="text-xs font-bold">Total earnings</p>
+              <h3 className="text-xl font-bold">$329.03 USD</h3>
             </div>
+            <div className="flex items-center bg-[#EAEAEA] rounded-xl p-1 mr-4">
+              <p className="me-2 text-xs font-bold">Past Year</p>
+              <img src={arrow1} alt="export" />
+            </div>
+          </div>
           {/* graph div */}
           <div className="h-[300px]">
-          <ResponsiveContainer width="100%" height="100%">
-            <LineChart
-              data={data}
-              margin={{ top: 5, right: 0, bottom: 5, left: 0 }}
-            >
-              <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-              <CartesianGrid stroke="#ccc" />
-              <XAxis dataKey="name" />
-              <YAxis
-                dataKey="uv"
-                axisLine={false}
-                tickLine={false}
-                tickCount={8}
-              />
-              <Tooltip />
-            </LineChart>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart
+                data={data}
+                margin={{ top: 5, right: 0, bottom: 5, left: 0 }}
+              >
+                <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="name" />
+                <YAxis
+                  dataKey="uv"
+                  axisLine={false}
+                  tickLine={false}
+                  tickCount={8}
+                />
+                <Tooltip />
+              </LineChart>
             </ResponsiveContainer>
           </div>
           {/* transaction div */}
@@ -293,7 +305,7 @@ const MoneyDashBord = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default MoneyDashBord;

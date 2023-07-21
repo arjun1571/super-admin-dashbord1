@@ -30,6 +30,7 @@ const Main = () => {
           <p className="text-xs font-semibold mt-1">Contractors</p>
         </div>
         </Link>
+        <Link to={"/contractorCart-details"}>
         <div className="flex flex-col items-center">
           <img
             className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
@@ -38,6 +39,7 @@ const Main = () => {
           />
           <p className="text-xs font-semibold mt-1">Users</p>
         </div>
+        </Link>
       </div>
       <div className="w-[100%] lg:w-[80%] h-[600px] mt-5">
         {/* search bar */}
