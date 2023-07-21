@@ -1,8 +1,11 @@
 import React from 'react';
 import menuHome from "../asset/home-menu.svg";
+import person from "../asset/person 2.png";
+import Teads from "../asset/hammer (1) 3.png";
 import Enginer from "../asset/engineer.png";
 import { SearchIcon } from "@heroicons/react/outline";
 import { Link, Outlet } from 'react-router-dom';
+
 
 
 const Main = () => {
@@ -30,14 +33,24 @@ const Main = () => {
           <p className="text-xs font-semibold mt-1">Contractors</p>
         </div>
         </Link>
-        <Link >
+        <Link to={"/user"}>
         <div className="flex flex-col items-center">
           <img
             className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
-            src={menuHome}
-            alt="users"
+            src={person}
+            alt="dashboard"
           />
-          <p className="text-xs font-semibold mt-1">Users</p>
+          <p className="text-xs font-semibold mt-1">Dashboard</p>
+        </div>
+        </Link>
+        <Link to={"/trades"}>
+        <div className="flex flex-col items-center  lg:my-16">
+          <img
+            className="w-[56px] h-[49px] hover:bg-[#3F8825] rounded-xl p-3  hover:bg-opacity-[31%]"
+            src={Teads}
+            alt="contractors"
+          />
+          <p className="text-xs font-semibold mt-1">Trades</p>
         </div>
         </Link>
       </div>

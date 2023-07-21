@@ -3,6 +3,8 @@ import Main from "../LayOut/Main";
 import DashBord from "../Component/DashBord/DashBord";
 import ContractorCart from "../Component/ContractorsCart/ContractorCart";
 import ContracorsCartDetails from "../Component/ContractorsCart/ContracorsCartDetails";
+import Trades from "../Component/Trades/Trades";
+import User from "../Component/User/User";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +26,14 @@ export const router = createBrowserRouter([
         {
             path:"/contractorCart-details",
             element: <ContracorsCartDetails></ContracorsCartDetails>
+        },
+        {
+            path:"/trades",
+            element: <Trades></Trades>
+        },
+        {
+            path:"/user",
+            element: <User></User>
         },
     ]
   },
